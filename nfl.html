@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>American Football</title>
+    <link rel="stylesheet" href="assets/css/nfl.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="ulNavbar" id="dropdownClick">
+        <li class="navLeft">
+          <a href="#"><img src="assets/media/SYMBOL.png" alt="Error"/></a>
+        </li>
+        <li class="dropdownicon">
+          <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a>
+        </li>
+        <li class="navRight">
+          <a href="contact.html" class="boxF">Contact</a>
+        </li>
+        <li class="navRight">
+          <a class="boxE" href="references.html">References</a>
+        </li>
+        <li class="navRight"><a class="boxD active" href="nfl.html">NFL</a></li>
+        <li class="navRight"><a class="boxC" href="rules.html">Rules</a></li>
+        <li class="navRight">
+          <a class="boxB" href="position.html">Positions</a>
+        </li>
+        <li class="navRight"><a class="boxA" href="index.html">History</a></li>
+      </ul>
+    </nav>
+    <div class="box6">
+      <div class="container">
+        <div class="section5">
+          <div class="moreHeading">
+            <h1 id="nfl">N F L</h1>
+            <hr class="hrStyling" />
+          </div>
+          <div
+            class="nflParagraph"
+            style="background: url(assets/media/NFLballandhelmet.png) no-repeat center;background-size:150vh;"
+          >
+            <p>
+              <b>The National Football League (NFL):</b> It is a
+              <span class="textcolor">professional</span> American football
+              league consisting of 32 teams, divided equally between the
+              <span class="textcolor">National Football Conference (NFC)</span>
+              and the
+              <span class="textcolor">American Football Conference (AFC).</span>
+              The NFL is one of the four major professional sports leagues in
+              North America and the highest professional level of American
+              football in the world.The NFL's
+              <span class="textcolor">17-week</span> regular season runs from
+              early September to late December, with each team playing 16 games
+              and having one bye week. Following the conclusion of the regular
+              season, <span class="textcolor">six teams</span> from each
+              conference (four division winners and
+              <span class="textcolor">two wild card teams</span>) advance to the
+              playoffs, a single-elimination tournament culminating in the
+              <span class="textcolor">Super Bowl</span>, which is usually held
+              on the first <span class="textcolor">Sunday</span> in February and
+              is played between the champions of the NFC and AFC.
+            </p>
+            <img
+              class="circle"
+              title="Self Made Logo"
+              src="assets/media/selfmadelogo.jpg"
+              alt="error"
+            />
+            <p>
+              The NFL was formed in 1920 as the
+              <span class="textcolor"
+                >American Professional Football Association (APFA)</span
+              >
+              before renaming itself the National Football League for the 1922
+              season. After initially determining champions through
+              end-of-season standings, a playoff system was implemented in 1933
+              that culminated with the
+              <span class="textcolor">NFL Championship</span> Game until 1966.
+              Following an agreement to merge the NFL with the American Football
+              League (AFL), the <span class="textcolor">Super Bowl</span> was
+              first held in 1967 to determine a champion between the best teams
+              from the <span class="textcolor">two leagues</span> and has
+              remained as the final game of each NFL season since the merger was
+              completed in 1970. Today, the NFL has the<span class="textcolor">
+                highest average attendance (67,591)</span
+              >
+              of any professional sports league in the world and is the most
+              popular sports league in the United States.[5] The Super Bowl is
+              also among the biggest club sporting events in the world,[6] with
+              the individual games accounting for many of the most watched
+              television programs in
+              <span class="textcolor">American history</span> and all occupying
+              the Nielsen's Top 5 tally of the all-time most watched U.S.
+              television broadcasts by 2015.
+            </p>
+            <p>
+              The Green Bay Packers hold the most combined NFL championships
+              with 13, winning nine titles before the Super Bowl era and four
+              Super Bowls afterwards. Since the creation of the Super Bowl, the
+              Pittsburgh Steelers and New England Patriots both have the most
+              championship titles at six. The
+              <span class="textcolor">Patriots</span> are the NFL's current
+              champions following their victory over the Los Angeles Rams in
+              Super Bowl LIII.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Iframe">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/nzo7EmIE6Bs"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p><b>&copy; Kheman Garg 2019</b></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function dropdownMenu() {
+        var x = document.getElementById("dropdownClick");
+        if (x.className === "ulNavbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "ulNavbar";
+        }
+      }
+    </script>
+  </body>
+</html>

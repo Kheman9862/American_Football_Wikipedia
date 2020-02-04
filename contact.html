@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>American Football</title>
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/deca68ee5e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="ulNavbar" id="dropdownClick">
+        <li class="navLeft">
+          <a href="#"><img src="assets/media/SYMBOL.png" alt="Error"/></a>
+        </li>
+        <li class="dropdownicon">
+          <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a>
+        </li>
+        <li class="navRight">
+          <a href="contact.html" class="boxF active">Contact</a>
+        </li>
+        <li class="navRight">
+          <a class="boxE" href="references.html">References</a>
+        </li>
+        <li class="navRight"><a class="boxD" href="nfl.html">NFL</a></li>
+        <li class="navRight"><a class="boxC" href="rules.html">Rules</a></li>
+        <li class="navRight">
+          <a class="boxB" href="position.html">Positions</a>
+        </li>
+        <li class="navRight"><a class="boxA" href="index.html">History</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>C O N T A C T</h1>
+      <hr class="hrStyling" />
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+          <h3>
+            American Football Wikipidea<span class="trademark">&trade;</span>
+          </h3>
+          <ul>
+            <li>
+              <i class="fas fa-address-card"></i> Rochester Institute Of
+              Technology
+            </li>
+            <li><i class="fas fa-phone"></i> (585) 957-2248</li>
+            <li>
+              <i class="fas fa-envelope-square"></i> garg.kheman1996@gmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Email Us</h3>
+          <div class="alert">Your message has been sent</div>
+          <form id="contactForm">
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required />
+            </p>
+            <p>
+              <label>Company</label>
+              <input type="text" name="company" id="company" />
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" id="phone" />
+            </p>
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container1">
+        <div class="row">
+          <div class="col-12">
+            <p><b>&copy; Kheman Garg 2019</b></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function dropdownMenu() {
+        var x = document.getElementById("dropdownClick");
+        if (x.className === "ulNavbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "ulNavbar";
+        }
+      }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="assets/js/contactForm.js"></script>
+  </body>
+</html>
